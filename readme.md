@@ -1,4 +1,6 @@
-# Quick-Task 
+# Quick-Task
+
+[![Builder](https://travis-ci.org/liuyueyi/quick-task.svg?branch=master)](https://travis-ci.org/liuyueyi/quick-task) 
 
 一个简单的动态脚本调度框架，支持运行时，实时增加,删除和修改动态脚本，可用于后端的进行接口验证、数据订正，执行定时任务或校验脚本
 
