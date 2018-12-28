@@ -3,6 +3,7 @@ package com.git.hui.task.impl;
 import com.git.hui.task.api.BaseTask;
 
 /**
+ * 一个基本的每隔多少时间执行一次的任务基础类
  * Created by @author yihui in 21:25 18/7/19.
  */
 public abstract class BaseScheduleTask extends BaseTask {

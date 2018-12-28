@@ -12,6 +12,7 @@
     <modules>
         <module>task-core</module>
         <module>task-websocket-plugin</module>
+        <module>task-api</module>
     </modules>
 
     <description>一个简单的动态脚本调度框架，支持运行时，实时增加,删除和修改动态脚本，可用于后端的进行接口验证、数据订正，执行定时任务或校验脚本</description>
@@ -49,6 +50,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.git.hui</groupId>
+                <artifactId>task-api</artifactId>
+                <version>${task-core.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.git.hui</groupId>
                 <artifactId>task-core</artifactId>

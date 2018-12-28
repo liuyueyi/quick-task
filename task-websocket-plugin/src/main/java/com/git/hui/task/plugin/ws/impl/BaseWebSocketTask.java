@@ -1,8 +1,8 @@
 package com.git.hui.task.plugin.ws.impl;
 
 import com.git.hui.task.api.BaseTask;
-import com.git.hui.task.plugin.ws.BaseAgent;
-import com.git.hui.task.plugin.ws.WebSocketPlugin;
+import com.git.hui.task.plugin.ws.agent.BaseAgent;
+import com.git.hui.task.plugin.ws.agent.WebSocketPlugin;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Collections;

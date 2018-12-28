@@ -1,4 +1,4 @@
-package com.git.hui.task.plugin.ws;
+package com.git.hui.task.plugin.ws.agent;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;

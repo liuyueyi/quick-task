@@ -8,16 +8,11 @@ import com.git.hui.task.api.ITask
 class PrintScript implements ITask {
     @Override
     void run() {
-        println name() + " | print script run"
+        println name() + " |   print script run"
     }
 
     @Override
     void interrupt() {
         println "print script over!"
-    }
-
-    public static void main(String[] args) {
-        PrintScript printScript = PrintScript.class.newInstance();
-        printScript.run()
     }
 }
