@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>task-api</artifactId>
+    <version>${task-api.version}</version>
 
 
 </project>

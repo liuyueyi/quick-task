@@ -7,7 +7,7 @@
     <groupId>com.git.hui</groupId>
     <artifactId>quick-task</artifactId>
     <packaging>pom</packaging>
-    <version>${base-version}</version>
+    <version>0.0.1</version>
 
     <modules>
         <module>task-core</module>
@@ -20,6 +20,7 @@
 
     <properties>
         <base-version>0.0.1</base-version>
+        <task-api.version>0.0.1</task-api.version>
         <task-core.version>0.0.1</task-core.version>
         <task-websocket-plugin.version>0.0.1</task-websocket-plugin.version>
     </properties>
@@ -53,7 +54,7 @@
             <dependency>
                 <groupId>com.git.hui</groupId>
                 <artifactId>task-api</artifactId>
-                <version>${task-core.version}</version>
+                <version>${task-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.git.hui</groupId>
