@@ -1,6 +1,7 @@
 # Quick-Task
 
 [![Builder](https://travis-ci.org/liuyueyi/quick-task.svg?branch=master)](https://travis-ci.org/liuyueyi/quick-task) 
+[![](https://jitpack.io/v/liuyueyi/quick-task.svg)](https://jitpack.io/#liuyueyi/quick-task)
 
 一个简单的动态脚本调度框架，支持运行时，实时增加,删除和修改动态脚本，可用于后端的进行接口验证、数据订正，执行定时任务或校验脚本
 
@@ -14,6 +15,10 @@
 ## I. 使用姿势
 
 ### 1. pom配置
+
+两种使用姿势，一是我自己搭的私服，好处是更新及时；另一个是jitpack，优点是其对应的包就是github中的release版本
+
+**case1:**
 
 添加仓库地址
 
@@ -35,6 +40,28 @@
     <version>0.0.1</version>
 </dependency>
 ```
+
+**case2:**
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+添加依赖
+
+```xml
+<dependency>
+    <groupId>com.github.liuyueyi</groupId>
+    <artifactId>quick-task</artifactId>
+    <version>v0.0.1</version>
+</dependency>
+```
+
 
 ### 2. 使用demo
 
@@ -129,11 +156,11 @@ public class AppRunner {
 **框架相关博文**
 
 - [180628-动态任务执行框架想法篇](https://liuyueyi.github.io/hexblog/2018/06/28/180628-%E5%8A%A8%E6%80%81%E4%BB%BB%E5%8A%A1%E6%89%A7%E8%A1%8C%E6%A1%86%E6%9E%B6%E6%83%B3%E6%B3%95%E7%AF%87/)
-- [2018/07/02 180702-QuickTask动态脚本支持框架整体介绍篇](https://liuyueyi.github.io/hexblog/2018/07/02/180702-QuickTask%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E6%95%B4%E4%BD%93%E4%BB%8B%E7%BB%8D%E7%AF%87/)
-- [2018/07/19 180719-Quick-Task 动态脚本支持框架之使用介绍篇](https://liuyueyi.github.io/hexblog/2018/07/19/180719-Quick-Task-%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E4%B9%8B%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D%E7%AF%87/)
-- [2018/07/23 180723-Quick-Task 动态脚本支持框架之结构设计篇](https://liuyueyi.github.io/hexblog/2018/07/23/180723-Quick-Task-%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E4%B9%8B%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E7%AF%87/)
-- [2018/07/29 180729-Quick-Task 动态脚本支持框架之任务动态加载](https://liuyueyi.github.io/hexblog/2018/07/29/180729-Quick-Task-%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E4%B9%8B%E4%BB%BB%E5%8A%A1%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD/)
-- [2018/08/07 180807-Quick-Task 动态脚本支持框架之Groovy脚本加载执行](https://liuyueyi.github.io/hexblog/2018/08/07/180807-Quick-Task-%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E4%B9%8BGroovy%E8%84%9A%E6%9C%AC%E5%8A%A0%E8%BD%BD%E6%89%A7%E8%A1%8C/)
+- [180702-QuickTask动态脚本支持框架整体介绍篇](https://liuyueyi.github.io/hexblog/2018/07/02/180702-QuickTask%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E6%95%B4%E4%BD%93%E4%BB%8B%E7%BB%8D%E7%AF%87/)
+- [180719-Quick-Task 动态脚本支持框架之使用介绍篇](https://liuyueyi.github.io/hexblog/2018/07/19/180719-Quick-Task-%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E4%B9%8B%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D%E7%AF%87/)
+- [180723-Quick-Task 动态脚本支持框架之结构设计篇](https://liuyueyi.github.io/hexblog/2018/07/23/180723-Quick-Task-%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E4%B9%8B%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E7%AF%87/)
+- [180729-Quick-Task 动态脚本支持框架之任务动态加载](https://liuyueyi.github.io/hexblog/2018/07/29/180729-Quick-Task-%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E4%B9%8B%E4%BB%BB%E5%8A%A1%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD/)
+- [180807-Quick-Task 动态脚本支持框架之Groovy脚本加载执行](https://liuyueyi.github.io/hexblog/2018/08/07/180807-Quick-Task-%E5%8A%A8%E6%80%81%E8%84%9A%E6%9C%AC%E6%94%AF%E6%8C%81%E6%A1%86%E6%9E%B6%E4%B9%8BGroovy%E8%84%9A%E6%9C%AC%E5%8A%A0%E8%BD%BD%E6%89%A7%E8%A1%8C/)
 
 
 ### 1. [一灰灰Blog](https://liuyueyi.github.io/hexblog)： https://liuyueyi.github.io/hexblog
